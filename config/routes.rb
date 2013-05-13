@@ -1,4 +1,12 @@
 FiveStrikesTest::Application.routes.draw do
+  resources :tickers
+
+  resources :games
+
+  resources :players
+
+  resources :teams
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

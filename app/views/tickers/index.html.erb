@@ -1,0 +1,27 @@
+<h1>Listing tickers</h1>
+
+<table>
+  <tr>
+    <th>Actionid</th>
+    <th>Playerid</th>
+    <th>Tickerid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tickers.each do |ticker| %>
+  <tr>
+    <td><%= ticker.actionID %></td>
+    <td><%= ticker.playerID %></td>
+    <td><%= ticker.tickerID %></td>
+    <td><%= link_to 'Show', ticker %></td>
+    <td><%= link_to 'Edit', edit_ticker_path(ticker) %></td>
+    <td><%= link_to 'Destroy', ticker, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ticker', new_ticker_path %>

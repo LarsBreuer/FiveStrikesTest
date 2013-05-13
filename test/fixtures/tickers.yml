@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  actionID: 1
+  playerID: 1
+  tickerID: 1
+
+two:
+  actionID: 1
+  playerID: 1
+  tickerID: 1
